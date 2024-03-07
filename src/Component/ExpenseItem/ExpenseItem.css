@@ -1,0 +1,16 @@
+.expense-item {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #B5C0D0;
+}
+  
+  .expense-item__description h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+  
