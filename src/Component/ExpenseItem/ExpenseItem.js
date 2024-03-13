@@ -1,14 +1,16 @@
+import ExpenseDate from '../ExpenseDate/ExpenseDate'
 import './ExpenseItem.css'
-function ExpenseItem(){
-    const expenseDate = new Date(2024, 2, 6)
+function ExpenseItem(props){
+
     return (
         <div className="expense-item">
-            <div>Marzo 06 2024</div>
+            
+            <ExpenseDate date ={props.date}/>
             <div className="expense-item__description">
-                <h2>Travel</h2>
-                <div className="expensive-item__price">$250</div>
+                <h2>{props.title}</h2>
+                <div className="expensive-item__price">${props.amount}</div>
             </div>
         </div>
     )
 }
- export default ExpenseItem
+export default ExpenseItem
