@@ -1,7 +1,10 @@
-import Expenses from './Component/Expenses/Expenses';
+import Expenses from './Components/Expenses/Expenses';
 import './App.css';
+//existe otra forma alternativa  crear una funcion, y es usando arrow function
 
-function App() {
+//function App() {
+  //forma alternativa de crear la función, ojo que es opcional, puedes crearlas las funciones con function o con arrow function
+const App = () => {
   const expenses = [
     {id: 'e1', title: 'Shopping', amount: 294.67, date: new Date(2024, 2, 6) },
     {id: 'e2', title: 'Travel', amount: 600, date: new Date(2024, 2, 8) },
