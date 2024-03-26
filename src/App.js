@@ -1,4 +1,5 @@
 import Expenses from './Components/Expenses/Expenses';
+import NewExpense from './Components/NewExpenses/NewExpense/NewExpense';
 import './App.css';
 //existe otra forma alternativa  crear una funcion, y es usando arrow function
 
@@ -15,15 +16,7 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* {expenses.map(expense => (
-          <Expenses 
-            key = {expense.id}
-            title = {expense.title}
-            amount = {expense.amount}
-            date = {expense.date}
-          />
-
-      )) } */}
+        <NewExpense />
          <Expenses expensesData = {expenses} />
       
       
