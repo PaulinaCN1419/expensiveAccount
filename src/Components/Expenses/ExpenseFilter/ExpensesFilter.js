@@ -1,9 +1,10 @@
 
 import './ExpensesFilter.css'
 function ExpenseFilter(props) {
+    // Este manejador de eventos se activa cuando el usuario cambia la selección en el select
     const dropDownChangeHandler = (event) => {
         // console.log(event.target.value)
-        props.onChangeFilter(event.target.value)
+        props.onFilterChange(event.target.value)
 
     }
 
